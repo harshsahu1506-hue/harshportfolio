@@ -1,20 +1,26 @@
+import React, { Suspense } from 'react';
 import { Layout } from './components/Layout';
-import { Hero } from './sections/Hero';
-import { About } from './sections/About';
-import { Skills } from './sections/Skills';
-import { Experience } from './sections/Experience';
-import { NetworkViz } from './sections/NetworkViz';
-import { Contact } from './sections/Contact';
+
+const Hero = React.lazy(() => import('./sections/Hero').then(module => ({ default: module.Hero })));
+const About = React.lazy(() => import('./sections/About').then(module => ({ default: module.About })));
+const Skills = React.lazy(() => import('./sections/Skills').then(module => ({ default: module.Skills })));
+const Experience = React.lazy(() => import('./sections/Experience').then(module => ({ default: module.Experience })));
+const Resume = React.lazy(() => import('./sections/Resume').then(module => ({ default: module.Resume })));
+const NetworkViz = React.lazy(() => import('./sections/NetworkViz').then(module => ({ default: module.NetworkViz })));
+const Contact = React.lazy(() => import('./sections/Contact').then(module => ({ default: module.Contact })));
 
 function App() {
   return (
     <Layout>
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <NetworkViz />
-      <Contact />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Resume />
+        <NetworkViz />
+        <Contact />
+      </Suspense>
     </Layout>
   );
 }
