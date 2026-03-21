@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Network, Cloud, Cpu, Settings } from 'lucide-react';
+import { Network, Cloud, Cpu, Settings, Brain } from 'lucide-react';
 import { ClayCard } from '../components/ClayCard';
 
 const skillsData = [
@@ -23,6 +23,11 @@ const skillsData = [
     category: "Tools",
     icon: <Settings className="text-accent" />,
     skills: ["Microsoft Outlook", "System Maintenance"]
+  },
+  {
+    category: "AI Tools",
+    icon: <Brain className="text-accent" />,
+    skills: ["Google Gemini", "Claude.ai", "Antigravity", "Firebase"]
   }
 ];
 

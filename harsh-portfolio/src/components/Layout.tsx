@@ -32,6 +32,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <a href="#about" className="hover:text-accent transition-colors">About</a>
             <a href="#skills" className="hover:text-accent transition-colors">Skills</a>
             <a href="#experience" className="hover:text-accent transition-colors">Experience</a>
+            <a href="#achievements" className="hover:text-accent transition-colors">Achievements</a>
             <a href="#resume" className="hover:text-accent transition-colors">Resume</a>
             <a href="#contact" className="hover:text-accent transition-colors">Contact</a>
           </div>

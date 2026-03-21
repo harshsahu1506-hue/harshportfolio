@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
 
           <p className="text-base md:text-lg text-white/50 max-w-md mb-12 leading-relaxed">
             Building reliable IT infrastructure and scalable cloud solutions at{' '}
-            <span className="text-white/80">STJ Electronics Pvt. Ltd.</span> — Raipur, Chhattisgarh.
+            <span className="text-white/80"></span> — Raipur, Chhattisgarh.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
